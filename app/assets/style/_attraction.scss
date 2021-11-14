@@ -1,0 +1,99 @@
+.attractionUp {
+    .searchBox {
+        position: relative;
+        left: 70px;
+        padding: 17px 10px 17px 31px;
+        .btn {
+            background-color: transparent;
+            &:hover {
+                background-color: $primary;
+                color: #fff;
+            }
+        }
+        span {
+            margin-right: 21px;
+        }
+        .material-icons {
+            color: $primary;
+        }
+    }
+    .filter {
+        h5 {
+            font-weight: 700;
+            position: relative;
+            top: 6px;
+        }
+        .block {
+            margin: 0 30px;
+            width: 138px;
+            border: 1px solid $font-color;
+            padding: 0px 17px;
+            border-radius: 20px;
+        }
+        p {
+            padding: 8px 0;
+        }
+        p + p {
+            border-top: 1px solid $font-color;
+        }
+    }
+}
+.attractionDown {
+    .attractSearchBar {
+        .subTitle {
+            font-weight: 700;
+            font-size: $h5-font-size;
+            letter-spacing: 2px;
+        }
+        .currentSearch {
+            ol {border-bottom: 1px solid $font-color;}
+            li:hover {color: $primary;}
+        }
+        .detialSearch {
+            width: 220px;
+            padding-top: 24px;
+                span {
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: $primary;
+                    margin-left: 12px;
+                    display: inline;
+                }
+        }
+        .btn{
+            font-size: 16px;
+        }
+    }
+    .attractCard {
+        padding-top: 38px;
+        gap: 14px;
+        .cardItem {
+            width: 248px;
+            height: 248px;
+            border: 1px solid $light-font-color;
+        }
+        .cardPic {
+            overflow: hidden;
+            transition: 0.2s 0.1s;
+            img {
+                width: 250px;
+                height: 168px;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+        .cardText {
+            padding: 11px 16px 18px 16px;
+            .cardtitel:hover {
+                color: $primary;
+                font-size: $h5-font-size;
+            }
+            .cardTextContent {
+                span{color:$primary}
+                .heart:hover span{color: $secondary;}
+            }
+        }
+    }
+}
+

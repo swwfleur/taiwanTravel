@@ -1,0 +1,57 @@
+.contentHeader{
+    span{font-size: 14px;}
+}
+.contentText {
+    .attractionInfo {
+        span,
+        i {
+            color: $primary;
+            margin-right: 10px;
+        }
+        .tag {
+            color: $primary;
+        }
+        .address span {
+            font-size: 20px;
+        }
+        .attractTitle {
+            font-weight: 700;
+            font-size: $h4-font-size;
+        }
+    }
+    .openTime {
+        .opentimeTitle {
+            font-weight: bold;
+            font-size: $h5-font-size;
+        }
+        .btn{
+            position: relative;
+            top: -33px;
+            left: 80px;
+            border: 1px solid $primary;
+            color:$primary;
+            display: inline;
+            padding: 0px 8px;
+            &:hover{
+                background-color: $primary;
+                color: #fff;
+            }
+        }
+    }
+    .timeTableList {
+
+    }
+    
+}
+.contentPic {
+    img {width: 600px;height: 420px;}
+    }
+.contentIntro{
+    background-color:$background;
+    padding-top: 44px;
+    padding-bottom: 44px;
+    p{line-height: 24px}
+}
+.access{
+    .subTitle{font-size: $h5-font-size;font-weight: bold;letter-spacing: 3px}
+}

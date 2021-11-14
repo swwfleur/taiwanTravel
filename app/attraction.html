@@ -1,0 +1,232 @@
+---
+title: attraction
+layout: ./app/layout.ejs
+engine: ejs
+current: attraction
+---
+
+<div class="attractionUp container d-flex j-content-between">
+    <ol class="breadcrumb d-flex">
+        <li><a href="index.html"></a>首頁</li>
+        <li><a href="attraction.html"></a>景點</li>
+    </ol>
+    <div class="searchBox block block3 a-self-center d-flex j-content-between a-items-center">
+        <p><span class="material-icons">search</span>台南</p>
+        <input type="button" value="GO" class="btn">
+    </div>
+    <div class="filter d-flex">
+        <h5>排序方式</h5>
+        <div class="block">
+            <p>熱門優先<img
+                    src="https://github.com/swwfleur/taiwanTravel/blob/master/app/assets/images/icon/direction=up.png?raw=true"
+                    alt=""></p>
+            <p>距離優先</p>
+        </div>
+    </div>
+</div>
+<div class="attractionDown container d-flex">
+    <div class="attractSearchBar">
+        <div class="currentSearch">
+            <h3 class="subTitle mb-2">你正在搜尋</h3>
+            <ol>
+                <li class="mb-2">景點</li>
+                <li class="mb-2">美食</li>
+                <li class="mb-3">活動</li>
+            </ol>
+        </div>
+        <div class="detialSearch">
+            <h3 class="subTitle mb-4">縮小範圍搜尋
+                <span>清除條件</span>
+            </h3>
+            <div class="area mb-2">
+                <h4 class="mb-2">地理區域</h4>
+                <div class="btn btn3 mb-4">縣市地區
+                    <img src="https://github.com/swwfleur/taiwanTravel/blob/master/app/assets/images/icon/direction=bottom.png?raw=true"
+                        alt="">
+                </div>
+            </div>
+            <div class="theme">
+                <h4 class="mb-2">景點主題</h4>
+                <div class="btn btn3 mb-2">花海漫遊</div>
+                <div class="btn btn3 mb-2">水上活動</div>
+                <div class="btn btn3 mb-2">星空露營</div>
+                <div class="btn btn3 mb-2">溫泉湯屋</div>
+                <div class="btn btn3 mb-2">親子同遊</div>
+                <div class="btn btn3 mb-2">歷史文化</div>
+            </div>
+        </div>
+    </div>
+    <ul class="attractCard d-flex flex-wrap j-content-end">
+        <li class="cardItem">
+            <div class="cardPic">
+                <img src="https://github.com/swwfleur/taiwanTravel/blob/master/app/assets/images/search%20page/%E5%B0%87%E8%BB%8D%E6%BC%81%E6%B8%AF%E5%9C%B0%E6%A8%99.jpg?raw=true"
+                    alt="將軍漁港地標">
+            </div>
+            <div class="cardText">
+                <h3 class="cardtitel">將軍觀光漁港</h3>
+                <div class="cardTextContent d-flex j-content-between">
+                    <p class="pt-1"><span class="material-icons mr-6">place</span>臺南市 將軍區</p>
+                    <a href="#" class="heart"><span class="material-icons">
+                            favorite_border</span></a>
+                </div>
+
+            </div>
+        </li>
+        <li class="cardItem">
+            <div class="cardPic">
+                <a href="masago.html"><img src="https://github.com/swwfleur/taiwanTravel/blob/master/app/assets/images/search%20page/%E9%B3%A5%E7%9E%B0%E9%A6%AC%E6%B2%99%E6%BA%9D%E6%B5%B7%E6%B4%8B%E4%BC%91%E9%96%92%E9%81%8B%E5%8B%95%E6%B8%A1%E5%81%87%E4%B8%AD%E5%BF%83.jpg?raw=true"alt="鳥瞰馬沙溝海洋休閒運動渡假中心"></a>
+            </div>
+            <div class="cardText">
+                <h3 class="cardtitel">馬沙溝海洋休閒運動渡假...</h3>
+                <div class="cardTextContent d-flex j-content-between">
+                    <p class="pt-1"><span class="material-icons mr-6">place</span>臺南市 將軍區</p>
+                    <a href="#" class="heart"><span class="material-icons">
+                            favorite_border</span></a>
+                </div>
+
+            </div>
+        </li>
+        <li class="cardItem">
+            <div class="cardPic">
+                <img src="https://github.com/swwfleur/taiwanTravel/blob/master/app/assets/images/search%20page/%E8%98%86%E7%AB%B9%E6%BA%9D%E8%A7%80%E5%85%89%E6%BC%81%E6%B8%AF1.jpg?raw=true"alt="蘆竹溝觀光漁港">
+            </div>
+            <div class="cardText">
+                <h3 class="cardtitel">蘆竹溝觀光漁港</h3>
+                <div class="cardTextContent d-flex j-content-between">
+                    <p class="pt-1"><span class="material-icons mr-6">place</span>臺南市 北門區</p>
+                    <a href="#" class="heart"><span class="material-icons">
+                            favorite_border</span></a>
+                </div>
+
+                
+            </div>
+        </li>
+        <li class="cardItem">
+            <div class="cardPic">
+                <img src="https://github.com/swwfleur/taiwanTravel/blob/master/app/assets/images/search%20page/%E4%B8%83%E8%82%A1%E8%A7%80%E6%B5%B7%E6%A8%93%E5%A4%95%E9%99%BD.jpg?raw=true"alt="七股觀海樓夕陽">
+            </div>
+            <div class="cardText">
+                <h3 class="cardtitel">觀海樓</h3>
+                <div class="cardTextContent d-flex j-content-between">
+                    <p class="pt-1"><span class="material-icons mr-6">place</span>臺南市 七股區</p>
+                    <a href="#" class="heart"><span class="material-icons">
+                            favorite_border</span></a>
+                </div>
+
+            </div>
+        </li>
+        <li class="cardItem">
+            <div class="cardPic">
+                <img src="https://github.com/swwfleur/taiwanTravel/blob/master/app/assets/images/search%20page/%E8%9A%B5%E5%AF%AE%E6%BC%81%E6%B8%AF.jpg?raw=true"alt="蚵寮漁港">
+            </div>
+            <div class="cardText">
+                <h3 class="cardtitel">蚵寮漁港</h3>
+                <div class="cardTextContent d-flex j-content-between">
+                    <p class="pt-1"><span class="material-icons mr-6">place</span>臺南市 北門區</p>
+                    <a href="#" class="heart"><span class="material-icons">
+                            favorite_border</span></a>
+                </div>
+
+            </div>
+        </li>
+        <li class="cardItem">
+            <div class="cardPic">
+                <img src="https://github.com/swwfleur/taiwanTravel/blob/master/app/assets/images/search%20page/%E7%83%8F%E8%85%B3%E7%97%85%E7%B4%80%E5%BF%B5%E9%A4%A8.jpg?raw=true" alt="烏腳病紀念館">
+            </div>
+            <div class="cardText">
+                <h3 class="cardtitel">台灣烏腳病醫療紀念館</h3>
+                <div class="cardTextContent d-flex j-content-between">
+                    <p class="pt-1"><span class="material-icons mr-6">place</span>臺南市 北門區</p>
+                    <a href="#" class="heart"><span class="material-icons">
+                            favorite_border</span></a>
+                </div>
+
+            </div>
+        </li>
+        <li class="cardItem">
+            <div class="cardPic">
+                <img src="https://github.com/swwfleur/taiwanTravel/blob/master/app/assets/images/search%20page/%E5%8C%97%E9%96%80%E6%BD%9F%E6%B9%96%E6%99%A8%E6%9B%A6.jpg?raw=true"alt="北門潟湖晨曦">
+            </div>
+            <div class="cardText">
+                <h3 class="cardtitel">北門潟湖</h3>
+                <div class="cardTextContent d-flex j-content-between">
+                    <p class="pt-1"><span class="material-icons mr-6">place</span>臺南市 北門區</p>
+                    <a href="#" class="heart"><span class="material-icons">
+                            favorite_border</span></a>
+                </div>
+
+            </div>
+        </li>
+        <li class="cardItem">
+            <div class="cardPic">
+                <img src="https://github.com/swwfleur/taiwanTravel/blob/master/app/assets/images/search%20page/%E4%B8%83%E8%82%A1%E9%B9%BD%E5%B1%B1.jpg?raw=true"alt="七股鹽山">
+            </div>
+            <div class="cardText">
+                <h3 class="cardtitel">七股鹽山</h3>
+                <div class="cardTextContent d-flex j-content-between">
+                    <p class="pt-1"><span class="material-icons mr-6">place</span>臺南市 七股區</p>
+                    <a href="#" class="heart"><span class="material-icons">
+                            favorite_border</span></a>
+                </div>
+            </div>
+        </li>
+        <li class="cardItem">
+            <div class="cardPic">
+                <img src="https://github.com/swwfleur/taiwanTravel/blob/master/app/assets/images/search%20page/%E9%BE%8D%E5%B1%B1%E5%AE%AE.jpg?raw=true"alt="龍山宮">
+            </div>
+            <div class="cardText">
+                <h3 class="cardtitel">龍山宮</h3>
+                <div class="cardTextContent d-flex j-content-between">
+                    <p class="pt-1"><span class="material-icons mr-6">place</span>臺南市 七股區</p>
+                    <a href="#" class="heart"><span class="material-icons">
+                            favorite_border</span></a>
+                </div>
+
+            </div>
+        </li>
+        <li class="cardItem">
+            <div class="cardPic">
+                <img src="https://github.com/swwfleur/taiwanTravel/blob/master/app/assets/images/search%20page/%E5%B0%87%E8%BB%8D%E6%BC%81%E6%B8%AF%E5%9C%B0%E6%A8%99.jpg?raw=true"
+                    alt="將軍漁港地標">
+            </div>
+            <div class="cardText">
+                <h3 class="cardtitel">將軍觀光漁港</h3>
+                <div class="cardTextContent d-flex j-content-between">
+                    <p class="pt-1"><span class="material-icons mr-6">place</span>臺南市 將軍區</p>
+                    <a href="#" class="heart"><span class="material-icons">
+                            favorite_border</span></a>
+                </div>
+
+            </div>
+        </li>
+        <li class="cardItem">
+            <div class="cardPic">
+                <img src="https://github.com/swwfleur/taiwanTravel/blob/master/app/assets/images/search%20page/%E9%B3%A5%E7%9E%B0%E9%A6%AC%E6%B2%99%E6%BA%9D%E6%B5%B7%E6%B4%8B%E4%BC%91%E9%96%92%E9%81%8B%E5%8B%95%E6%B8%A1%E5%81%87%E4%B8%AD%E5%BF%83.jpg?raw=true"alt="鳥瞰馬沙溝海洋休閒運動渡假中心">
+            </div>
+            <div class="cardText">
+                <h3 class="cardtitel">馬沙溝海洋休閒運動渡假...</h3>
+                <div class="cardTextContent d-flex j-content-between">
+                    <p class="pt-1"><span class="material-icons mr-6">place</span>臺南市 將軍區</p>
+                    <a href="#" class="heart"><span class="material-icons">
+                            favorite_border</span></a>
+                </div>
+
+            </div>
+        </li>
+        <li class="cardItem">
+            <div class="cardPic">
+                <img src="https://github.com/swwfleur/taiwanTravel/blob/master/app/assets/images/search%20page/%E8%98%86%E7%AB%B9%E6%BA%9D%E8%A7%80%E5%85%89%E6%BC%81%E6%B8%AF1.jpg?raw=true"alt="蘆竹溝觀光漁港">
+            </div>
+            <div class="cardText">
+                <h3 class="cardtitel">蘆竹溝觀光漁港</h3>
+                <div class="cardTextContent d-flex j-content-between">
+                    <p class="pt-1"><span class="material-icons mr-6">place</span>臺南市 北門區</p>
+                    <a href="#" class="heart"><span class="material-icons">
+                            favorite_border</span></a>
+                </div>
+
+                
+            </div>
+        </li>
+    </ul>
+</div>

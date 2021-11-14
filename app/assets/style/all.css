@@ -1,0 +1,758 @@
+@charset "UTF-8";
+/* reset css */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&family=Open+Sans:wght@600&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: #737373;
+  text-decoration: none;
+}
+
+/* rwd img css，可當作是 CSS Reset 其中一個 */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* 全域 border box */
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans TC", "Open Sans", sans-serif;
+  line-height: 1.5;
+  color: #737373;
+}
+
+.wrap {
+  max-width: 1295px;
+  margin: auto;
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.wrap2 {
+  max-width: 1029px;
+  margin: 0 auto;
+}
+
+.mainInfon .engTitle, .mainInfon .chTitle {
+  font-size: 3rem;
+}
+
+.mainInfon .engTitle {
+  line-height: 48px;
+  color: #769763;
+}
+
+.mainInfon .chTitle {
+  line-height: 70px;
+  color: #737373;
+  letter-spacing: 5px;
+}
+
+.mainInfon p {
+  letter-spacing: 5px;
+  line-height: 26px;
+  color: #737373;
+  font-weight: 400;
+}
+
+.mainInfon2 .engTitle {
+  color: #F1D675;
+}
+
+.mainInfon2 .chTitle {
+  font-size: 2.25rem;
+  color: #fff;
+  line-height: 52px;
+}
+
+.mainInfon2 p {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+}
+
+.list {
+  padding-top: 42px;
+}
+
+.list li {
+  padding: 16px 0px 16px 24px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.list li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #F1D675;
+  border-radius: 50%;
+  display: block;
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.list li a {
+  letter-spacing: 5px;
+}
+
+.block {
+  width: 512px;
+  padding: 21px 31px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+}
+
+.block2 {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+}
+
+.block3 {
+  border: 1px solid #C4C4C4;
+  background-color: transparent;
+}
+
+.btn {
+  font-size: 14px;
+  width: 100px;
+  border-radius: 50px;
+  padding: 4px;
+  border: 1px solid #769763;
+  color: #769763;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #769763;
+  color: #fff;
+}
+
+.btn2 {
+  border: 1px solid #737373;
+  color: #737373;
+  width: 150px;
+}
+
+.btn2:hover {
+  background-color: #737373;
+  color: #fff;
+}
+
+.btn3 {
+  text-align: center;
+  width: 168px;
+  padding: 3px 23px;
+  line-height: 30px;
+  color: #737373;
+  border: 1px solid #737373;
+  background-color: transparent;
+}
+
+.btn3:hover {
+  border: 1px solid #769763;
+}
+
+.btnS-grey {
+  padding: 0px;
+  border: 1px solid #737373;
+  color: #737373;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.breadcrumb li + li ::before {
+  content: "/";
+  display: inline-block;
+}
+
+.fontS {
+  font-size: 14px;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.j-content-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.j-content-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.a-items-start {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.a-items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.a-self-center {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.a-self-end {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+.mr-1 {
+  margin-right: 48px;
+}
+
+.mr-2 {
+  margin-right: 65px;
+}
+
+.mr-3 {
+  margin-right: 40px;
+}
+
+.mr-4 {
+  margin-right: 18px;
+}
+
+.mr-5 {
+  margin-right: 16px;
+}
+
+.mr-6 {
+  margin-right: 10px;
+}
+
+.mr-7 {
+  margin-right: 8px;
+}
+
+.ml-1 {
+  margin-left: 40px;
+}
+
+.mb-1 {
+  margin-bottom: 144px;
+}
+
+.mb-2 {
+  margin-bottom: 16px;
+}
+
+.mb-3 {
+  margin-bottom: 24px;
+}
+
+.mb-4 {
+  margin-bottom: 27px;
+}
+
+.mb-5 {
+  margin-bottom: 48px;
+}
+
+.mb-6 {
+  margin-bottom: 8px;
+}
+
+.mb-7 {
+  margin-bottom: 4px;
+}
+
+.mb-8 {
+  margin-bottom: 44px;
+}
+
+.pb-1 {
+  padding-bottom: 56px;
+}
+
+header .mainLogo a {
+  display: block;
+  background: url(https://github.com/swwfleur/taiwanTravel/blob/master/app/assets/images/20211102_logo-02.png?raw=true) center center/100%;
+  width: 160px;
+  height: 100px;
+  text-indent: 110%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+header .mainNav {
+  text-align: center;
+}
+
+header .mainNav li:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: block;
+  margin-left: 28px;
+  margin-top: 4px;
+}
+
+header .mainNav li:hover a {
+  background-color: #769763;
+  color: #fff;
+}
+
+header .mainNav li:hover li:before {
+  background-color: #F1D675;
+}
+
+header .mainNav span {
+  display: block;
+  font-size: 10px;
+  margin-top: 4px;
+}
+
+header .myFavorite a span {
+  color: #769763;
+}
+
+header .myFavorite a span:hover {
+  color: #F1D675;
+}
+
+.banner {
+  background: url(https://github.com/swwfleur/taiwanTravel/blob/master/app/assets/images/index_banner.jpg?raw=true) center center;
+  background-size: cover;
+  height: 800px;
+}
+
+.banner .searchNav {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 33px 0;
+}
+
+.banner .searchNav li {
+  padding: 0 30px;
+  border-right: 2px solid #ccc;
+}
+
+.banner .searchNav li:last-child {
+  border-right: none;
+}
+
+.banner .searchNav a {
+  display: block;
+}
+
+.banner .searchNav a:hover {
+  color: #F1D675;
+}
+
+.banner .searchArea {
+  position: relative;
+  bottom: -450px;
+}
+
+.banner p {
+  line-height: 24px;
+  color: #737373;
+  letter-spacing: 7px;
+}
+
+.banner p span {
+  font-size: 1.7rem;
+  color: #769763;
+  margin-right: 23px;
+}
+
+.exploreArea {
+  padding-bottom: 144px;
+}
+
+.exploreArea .explorePicList {
+  gap: 20px;
+}
+
+.exploreArea .explorePicList li {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.exploreArea .explorePicList li img {
+  width: 200px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+.exploreArea .explorePicList li h3 {
+  width: 20px;
+  padding-left: 4px;
+}
+
+.exploreArea .exploreUpArea {
+  position: relative;
+}
+
+.exploreArea .exploreUpArea .explorePicList {
+  position: absolute;
+  right: 0px;
+}
+
+.exploreArea .exploreDownArea {
+  position: relative;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.exploreArea .exploreDownArea .explorePicList {
+  position: absolute;
+  top: 45px;
+  right: 70px;
+}
+
+.particpateArea {
+  background-color: #FAFAFA;
+}
+
+.particpateArea .partiPicArea {
+  width: 800px;
+}
+
+.particpateArea .partiTextArea {
+  width: 380px;
+}
+
+.enjoyArea .enjoyPic {
+  gap: 24px;
+  padding-left: 4px;
+}
+
+.enjoyArea .enjoyPic li {
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.enjoyArea .enjoyPic li img {
+  height: 370px;
+  width: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+.enjoyArea .enjoyPic li:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.subscribe {
+  background-color: #769763;
+  padding: 139px 0;
+}
+
+.subscribe .subPic img {
+  width: 600px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.subscribe .mailText {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footerNav {
+  padding: 27px 0;
+  color: #C4C4C4;
+}
+
+.footerNav a {
+  font-size: 20px;
+  color: #C4C4C4;
+}
+
+.footerNav a:hover {
+  color: #737373;
+}
+
+.footerNav .language {
+  gap: 21px;
+}
+
+.footerNav .language a {
+  font-size: 12px;
+}
+
+.attractionUp .searchBox {
+  position: relative;
+  left: 70px;
+  padding: 17px 10px 17px 31px;
+}
+
+.attractionUp .searchBox .btn {
+  background-color: transparent;
+}
+
+.attractionUp .searchBox .btn:hover {
+  background-color: #769763;
+  color: #fff;
+}
+
+.attractionUp .searchBox span {
+  margin-right: 21px;
+}
+
+.attractionUp .searchBox .material-icons {
+  color: #769763;
+}
+
+.attractionUp .filter h5 {
+  font-weight: 700;
+  position: relative;
+  top: 6px;
+}
+
+.attractionUp .filter .block {
+  margin: 0 30px;
+  width: 138px;
+  border: 1px solid #737373;
+  padding: 0px 17px;
+  border-radius: 20px;
+}
+
+.attractionUp .filter p {
+  padding: 8px 0;
+}
+
+.attractionUp .filter p + p {
+  border-top: 1px solid #737373;
+}
+
+.attractionDown .attractSearchBar {
+  margin-right: 44px;
+}
+
+.attractionDown .subTitle {
+  font-weight: 700;
+  font-size: 1.125rem;
+  letter-spacing: 2px;
+}
+
+.attractionDown .currentSearch ol {
+  border-bottom: 1px solid #737373;
+}
+
+.attractionDown .currentSearch li:hover {
+  color: #769763;
+}
+
+.attractionDown .detialSearch {
+  padding-top: 24px;
+}
+
+.attractionDown .detialSearch .subTitle span {
+  font-weight: 400;
+  font-size: 14px;
+  color: #769763;
+  margin-left: 12px;
+}
+
+.attractionDown .attractCard {
+  padding-top: 38px;
+  gap: 14px;
+}
+
+.attractionDown .attractCard .cardItem {
+  width: 248px;
+  height: 248px;
+  border: 1px solid #C4C4C4;
+}
+
+.attractionDown .attractCard .cardPic {
+  overflow: hidden;
+  -webkit-transition: .2s .1s;
+  transition: .2s .1s;
+}
+
+.attractionDown .attractCard .cardPic img {
+  width: 250px;
+  height: 168px;
+}
+
+.attractionDown .attractCard .cardPic img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.attractionDown .attractCard .cardText {
+  padding: 11px 16px 18px 16px;
+}
+
+.attractionDown .attractCard .cardText .cardtitel:hover {
+  color: #769763;
+  font-size: 1.125rem;
+}
+
+.attractionDown .attractCard .cardText .cardTextContent {
+  padding-top: 5px;
+}
+
+.attractionDown .attractCard .cardText .cardTextContent p {
+  font-size: 14px;
+}
+
+.attractionDown .attractCard .cardText .cardTextContent span {
+  color: #769763;
+}
+
+.contentHeader span {
+  font-size: 14px;
+}
+
+.contentText .attractionInfo span,
+.contentText .attractionInfo i {
+  color: #769763;
+  margin-right: 10px;
+}
+
+.contentText .attractionInfo .tag {
+  color: #769763;
+}
+
+.contentText .attractionInfo .address span {
+  font-size: 20px;
+}
+
+.contentText .attractionInfo .attractTitle {
+  font-weight: 700;
+  font-size: 1.75rem;
+}
+
+.contentText .openTime .opentimeTitle {
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+.contentText .openTime .btn {
+  position: relative;
+  top: -33px;
+  left: 80px;
+  border: 1px solid #769763;
+  color: #769763;
+  display: inline;
+  padding: 0px 8px;
+}
+
+.contentText .openTime .btn:hover {
+  background-color: #769763;
+  color: #fff;
+}
+
+.contentPic img {
+  width: 600px;
+  height: 420px;
+}
+
+.contentIntro {
+  background-color: #FAFAFA;
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+
+.contentIntro p {
+  line-height: 24px;
+}
+
+.access .subTitle {
+  font-size: 1.125rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+/*# sourceMappingURL=all.css.map */

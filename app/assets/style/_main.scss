@@ -1,40 +1,30 @@
-body {
-    font-family: "Noto Sans TC", "Open Sans", sans-serif;
-    line-height: 1.5;
-    color: $font-color;
-}
-.wrap{
-    max-width: 1295px;
-    margin: auto;
-}
-.container {
-    max-width: 1040px;
-    margin: 0 auto;
-}
 header {
     .mainLogo {
-        background-image: url(/app/assets/images/20211102_logo-02.png);
-        background-size: 100%;
-        width: 160px;
+        a {
+            display: block;
+            background: url(https://github.com/swwfleur/taiwanTravel/blob/master/app/assets/images/20211102_logo-02.png?raw=true)center center /100%;
+            width: 160px;
         height: 100px;
         @include hide-text;
+        }
     }
     .mainNav {
-        text-align: center;
         li {
+            text-align: center;
             &:before {
                 content: "";
                 width: 8px;
                 height: 8px;
-                background-color: transparent; // 摸到出現顏色
+                background-color: transparent;
                 border-radius: 50%;
                 display: block;
-                margin-left: 28px;
-                margin-top: 4px;
+                margin-bottom: 10px;
+                margin-left: 20px;
             }
-        }
-        li:hover li:before {
-            background-color: $secondary;
+            &:hover {
+                background-color: $secondary;
+                color: #fff;
+            }
         }
         span {
             display: block;
@@ -53,7 +43,8 @@ header {
 }
 
 .banner {
-    background: url(/app/assets/images/index_banner.jpg) center center;
+    background: url(https://github.com/swwfleur/taiwanTravel/blob/master/app/assets/images/index_banner.jpg?raw=true)
+        center center;
     background-size: cover;
     height: 800px;
     .searchNav {
@@ -110,7 +101,7 @@ header {
         position: relative;
         .explorePicList {
             position: absolute;
-            right: 20px;
+            right: 0px;
         }
     }
     .exploreDownArea {
@@ -177,6 +168,8 @@ header {
     }
     .language {
         gap: 21px;
-        a{font-size: 12px;}
+        a {
+            font-size: 12px;
+        }
     }
 }
