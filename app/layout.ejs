@@ -6,18 +6,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title><%- title %></title>
+  <script src="https://kit.fontawesome.com/94db154147.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
 <body>
-  <header class="header">
-    這是 header
-  </header>
+  <header class="header container d-flex j-content-between a-items-center">
+    <h1 class="mainLogo">Logo</h1>
+    <ul class="mainNav d-flex">
+        <li class="mr-1"><a href="">找景點<span>ATTRACTION</span></a></li>
+        <li class="mr-1"><a href="">找美食<span>DELICACY</span></a></li>
+        <li class="mr-1"><a href="">找活動<span>ACTIVITY</span></a></li>
+        <li><a href="">探索更多<span>MORE</span></a></li>
+    </ul>
+    <div class="myFavorite">
+        <a href="#"><span class="material-icons">
+                favorite_border
+            </span></a>
+        <a href="#"><span class="material-icons">
+                help_outline
+            </span></a>
+    </div>
+</header>
 
   <%- contents %>
 
   <footer class="footer">
-    footer
+    <div class="footerNav container d-flex j-content-between">
+      <div class="followUs d-flex">
+          <h4 class="mr-4">Follow us</h4>
+          <a href="#" class="mr-5"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="mr-5"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="mr-5"><i class="fab fa-youtube"></i></a>
+      </div>
+      <div class="copyright">
+          <p>Copyright © 2021 TRAVEL. All rights reserved.</p>
+      </div>
+      <ul class="language d-flex">
+          <li><a href="#">CH</a></li>
+          <li><a href="#">EN</a></li>
+      </ul>
+  </div>
   </footer>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>

@@ -1,0 +1,182 @@
+body {
+    font-family: "Noto Sans TC", "Open Sans", sans-serif;
+    line-height: 1.5;
+    color: $font-color;
+}
+.wrap{
+    max-width: 1295px;
+    margin: auto;
+}
+.container {
+    max-width: 1040px;
+    margin: 0 auto;
+}
+header {
+    .mainLogo {
+        background-image: url(/app/assets/images/20211102_logo-02.png);
+        background-size: 100%;
+        width: 160px;
+        height: 100px;
+        @include hide-text;
+    }
+    .mainNav {
+        text-align: center;
+        li {
+            &:before {
+                content: "";
+                width: 8px;
+                height: 8px;
+                background-color: transparent; // 摸到出現顏色
+                border-radius: 50%;
+                display: block;
+                margin-left: 28px;
+                margin-top: 4px;
+            }
+        }
+        li:hover li:before {
+            background-color: $secondary;
+        }
+        span {
+            display: block;
+            font-size: 10px;
+            margin-top: 4px;
+        }
+    }
+    .myFavorite {
+        a span {
+            color: $primary;
+            &:hover {
+                color: $secondary;
+            }
+        }
+    }
+}
+
+.banner {
+    background: url(/app/assets/images/index_banner.jpg) center center;
+    background-size: cover;
+    height: 800px;
+    .searchNav {
+        background: rgba(255, 255, 255, 0.9);
+        padding: 33px 0;
+        li {
+            padding: 0 30px;
+            border-right: 2px solid #ccc;
+        }
+        li:last-child {
+            border-right: none;
+        }
+        a {
+            display: block;
+            &:hover {
+                color: $secondary;
+            }
+        }
+    }
+    .searchArea {
+        position: relative;
+        bottom: -450px;
+    }
+    p {
+        line-height: 24px;
+        color: $font-color;
+        letter-spacing: 7px;
+        span {
+            font-size: 1.7rem;
+            color: $primary;
+            margin-right: 23px;
+        }
+    }
+}
+.exploreArea {
+    padding-bottom: 144px;
+    .explorePicList {
+        gap: 20px;
+        li {
+            flex-shrink: 0;
+            img {
+                width: 200px;
+                height: 300px;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+            h3 {
+                width: 20px;
+                padding-left: 4px;
+            }
+        }
+    }
+    .exploreUpArea {
+        position: relative;
+        .explorePicList {
+            position: absolute;
+            right: 20px;
+        }
+    }
+    .exploreDownArea {
+        position: relative;
+        flex-shrink: 0;
+        .explorePicList {
+            position: absolute;
+            top: 45px;
+            right: 70px;
+        }
+    }
+}
+.particpateArea {
+    background-color: $background;
+    .partiPicArea {
+        width: 800px;
+    }
+    .partiTextArea {
+        width: 380px;
+    }
+}
+.enjoyArea {
+    .enjoyPic {
+        gap: 24px;
+        padding-left: 4px;
+        li {
+            overflow: hidden;
+            transition: 0.3s;
+            img {
+                height: 370px;
+                width: 250px;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+            &:hover img {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+.subscribe {
+    background-color: $primary;
+    padding: 139px 0;
+    .subPic {
+        img {
+            width: 600px;
+            height: 300px;
+            object-fit: cover;
+        }
+    }
+    .mailText {
+        color: rgba(255, 255, 255, 0.5);
+    }
+}
+.footerNav {
+    padding: 27px 0;
+    color: $light-font-color;
+    a {
+        font-size: 20px;
+        color: $light-font-color;
+        &:hover {
+            color: $font-color;
+        }
+    }
+    .language {
+        gap: 21px;
+        a{font-size: 12px;}
+    }
+}
